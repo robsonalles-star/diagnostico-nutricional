@@ -201,7 +201,12 @@ export default function Home() {
                   100% GRÁTIS
                 </div>
               </Button>
-              <Button size="lg" variant="outline" className="bg-white/10 hover:bg-white/20 text-white border-2 border-white font-semibold text-lg px-8 py-6 rounded-full backdrop-blur-sm w-full sm:w-auto">
+              <Button 
+                size="lg" 
+                variant="outline" 
+                onClick={() => router.push("/checkout")}
+                className="bg-white/10 hover:bg-white/20 text-white border-2 border-white font-semibold text-lg px-8 py-6 rounded-full backdrop-blur-sm w-full sm:w-auto"
+              >
                 Ver Planos Especiais
               </Button>
             </div>
@@ -663,7 +668,7 @@ export default function Home() {
                 </div>
                 <Button 
                   size="lg" 
-                  onClick={handleCTAClick}
+                  onClick={() => router.push("/checkout")}
                   className="mt-6 bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white font-bold text-lg px-8 py-6 rounded-full shadow-xl"
                 >
                   🎁 Garantir Bônus Agora
