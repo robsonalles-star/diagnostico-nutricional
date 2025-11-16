@@ -25,10 +25,7 @@ import {
   Lock,
   ArrowLeft,
   Zap,
-  Percent,
-  Clock,
-  AlertCircle,
-  Heart
+  Percent
 } from "lucide-react"
 
 type Plan = {
@@ -245,82 +242,13 @@ export default function CheckoutPage() {
 
       <div className="container mx-auto px-4 py-8 sm:py-12">
         <div className="max-w-6xl mx-auto">
-          {/* Hero Section - Apelo Emocional */}
-          <div className="text-center mb-12 space-y-6">
-            {/* Problema - Dor do Cliente */}
-            <div className="space-y-3">
-              <div className="inline-flex items-center gap-2 bg-red-50 border-2 border-red-200 text-red-700 px-4 py-2 rounded-full text-sm font-semibold mb-4">
-                <AlertCircle className="w-4 h-4" />
-                Você se identifica com isso?
-              </div>
-              
-              <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 leading-tight">
-                <span className="text-red-600">"Não sei mais o que cozinhar..."</span>
-                <br />
-                <span className="text-gray-700">"Não tenho tempo para fazer meu almoço..."</span>
-              </h1>
-              
-              <div className="max-w-3xl mx-auto space-y-3 text-lg text-gray-700">
-                <p className="flex items-center justify-center gap-2">
-                  <Clock className="w-5 h-5 text-orange-500 flex-shrink-0" />
-                  <span>Cansado de perder tempo pensando no que fazer?</span>
-                </p>
-                <p className="flex items-center justify-center gap-2">
-                  <AlertCircle className="w-5 h-5 text-orange-500 flex-shrink-0" />
-                  <span>Sempre comendo as mesmas coisas por falta de ideias?</span>
-                </p>
-                <p className="flex items-center justify-center gap-2">
-                  <Heart className="w-5 h-5 text-orange-500 flex-shrink-0" />
-                  <span>Quer comer bem mas não tem tempo para planejar?</span>
-                </p>
-              </div>
-            </div>
-
-            {/* Solução */}
-            <div className="bg-gradient-to-r from-emerald-50 to-teal-50 border-2 border-emerald-200 rounded-2xl p-6 sm:p-8 max-w-4xl mx-auto">
-              <div className="inline-flex items-center gap-2 bg-emerald-600 text-white px-4 py-2 rounded-full text-sm font-bold mb-4">
-                <Sparkles className="w-4 h-4" />
-                A SOLUÇÃO ESTÁ AQUI!
-              </div>
-              
-              <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">
-                Imagine ter um <span className="text-emerald-600">cardápio completo pronto</span> toda semana
-              </h2>
-              
-              <p className="text-lg text-gray-700 mb-6">
-                Sem pensar, sem estresse, sem perder tempo. Apenas receitas deliciosas, 
-                lista de compras automática e você cozinhando com prazer novamente.
-              </p>
-
-              <div className="grid sm:grid-cols-3 gap-4 text-left">
-                <div className="bg-white rounded-lg p-4 shadow-sm">
-                  <div className="w-10 h-10 bg-emerald-100 rounded-full flex items-center justify-center mb-3">
-                    <Check className="w-5 h-5 text-emerald-600" />
-                  </div>
-                  <h3 className="font-bold text-gray-900 mb-1">Cardápio Pronto</h3>
-                  <p className="text-sm text-gray-600">Receitas variadas toda semana</p>
-                </div>
-                
-                <div className="bg-white rounded-lg p-4 shadow-sm">
-                  <div className="w-10 h-10 bg-teal-100 rounded-full flex items-center justify-center mb-3">
-                    <Clock className="w-5 h-5 text-teal-600" />
-                  </div>
-                  <h3 className="font-bold text-gray-900 mb-1">Economize Tempo</h3>
-                  <p className="text-sm text-gray-600">Sem pensar no que fazer</p>
-                </div>
-                
-                <div className="bg-white rounded-lg p-4 shadow-sm">
-                  <div className="w-10 h-10 bg-purple-100 rounded-full flex items-center justify-center mb-3">
-                    <Heart className="w-5 h-5 text-purple-600" />
-                  </div>
-                  <h3 className="font-bold text-gray-900 mb-1">Coma Melhor</h3>
-                  <p className="text-sm text-gray-600">Refeições saudáveis e gostosas</p>
-                </div>
-              </div>
-            </div>
-
-            <p className="text-xl font-semibold text-gray-900">
-              Escolha seu plano e transforme sua rotina alimentar <span className="text-emerald-600">hoje mesmo!</span>
+          {/* Page Title */}
+          <div className="text-center mb-8">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 text-gray-900">
+              Escolha Seu Plano Ideal
+            </h1>
+            <p className="text-lg text-gray-600">
+              Personalize sua experiência com pacotes adicionais
             </p>
           </div>
 
